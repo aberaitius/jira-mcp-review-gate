@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.env
+.jira-mcp/
+*.log
+.DS_Store

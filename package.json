@@ -1,0 +1,29 @@
+{
+  "name": "jira-mcp-review-gate",
+  "version": "1.0.0",
+  "description": "An MCP server that connects Claude to Jira for ticket analysis, where reads are free and every write passes a human review gate.",
+  "type": "module",
+  "bin": {
+    "jira-mcp-review-gate": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.21.1",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "typescript": "5.7.2"
+  }
+}
